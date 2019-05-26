@@ -65,6 +65,12 @@ theme = "arch"
   weight = 1
 
 [[menu.sidebar]]
+  Name = "Sponsoring"
+  URL = "/pages/sponsoring"
+  Title = "Become a Sponsor!"
+  weight = 1
+
+[[menu.sidebar]]
   Name = "Travel"
   URL = "/pages/travel"
   Title = "Travel Information"
