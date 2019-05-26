@@ -72,7 +72,7 @@ theme = "arch"
 
 [[menu.sponsor]]
   Name = "native_instruments"
-  URL = "https://native-instruments.de"
+  URL = "https://www.native-instruments.com/en/"
   Title = "Native Instruments"
   weight = 1
 
