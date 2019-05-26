@@ -1,0 +1,4 @@
+baseURL = "https://conf.archlinux.org/"
+languageCode = "en-us"
+title = "Arch Conf"
+theme = "arch"
