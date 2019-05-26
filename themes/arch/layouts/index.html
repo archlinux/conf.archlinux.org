@@ -30,6 +30,16 @@
                 <li><a href="{{ .URL }}" title="{{ .Title  }}">{{ .Name }}</a></li>
                 {{ end }}
             </ul>
+        </div> 
+        <div id="arch-sponsors" class="widget">
+            <h4>Sponsors</h4>
+            {{ range .Site.Menus.sponsor}}
+            <a href="{{.URL}}" title="{{.Title}}">
+                <img src="" title="" alt="{{.Name }} logo">
+            </a>
+            {{ end }}
         </div>
     </div>
+</div>
+
 {{partial "footer.html" .}}
