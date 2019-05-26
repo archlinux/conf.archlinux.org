@@ -50,3 +50,10 @@ theme = "arch"
   URL = "https://archlinux.org/"
   Title = "Return to the main page"
   weight = -7
+
+
+[[menu.sidebar]]
+  Name = "Travel"
+  URL = "/pages/travel"
+  Title = "Travel Information"
+  weight = 1
