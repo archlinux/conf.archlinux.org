@@ -2,3 +2,51 @@ baseURL = "https://conf.archlinux.org/"
 languageCode = "en-us"
 title = "Arch Conf"
 theme = "arch"
+
+[[menu.main]]
+  Name = "Download"
+  URL = "https://archlinux.org/download"
+  Title = "Get Arch Linux"
+  weight = 0
+
+[[menu.main]]
+  Name = "AUR"
+  URL = "https://aur.archlinux.org/"
+  Title = "Arch Linux User Repository"
+  weight = -1
+
+[[menu.main]]
+  Name = "Security"
+  URL = "https://security.archlinux.org/"
+  Title = "Arch Linux Security Tracker"
+  weight = -2
+
+[[menu.main]]
+  Name = "Bugs"
+  URL = "https://bugs.archlinux.org/"
+  Title = "Report and track bugs"
+  weight = -3
+
+[[menu.main]]
+  Name = "Wiki"
+  URL = "https://wiki.archlinux.org/"
+  Title = "Community documentation"
+  weight = -4
+
+[[menu.main]]
+  Name = "Forums"
+  URL = "https://bbs.archlinux.org/"
+  Title = "Community forums"
+  weight = -5
+
+[[menu.main]]
+  Name = "Packages"
+  URL = "https://archlinux.org/packages/"
+  Title = "Arch Package Database"
+  weight = -6
+
+[[menu.main]]
+  Name = "Home"
+  URL = "https://archlinux.org/"
+  Title = "Return to the main page"
+  weight = -7

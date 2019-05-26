@@ -11,7 +11,7 @@
         <div id="archnavbarmenu">
             <ul id="archnavbarlist">
                 {{ range .Site.Menus.main }}
-                    <li class="anb-{{ .Name }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li class="anb-{{ .Name }}"><a href="{{ .URL }}" title="{{ .Title  }}">{{ .Name }}</a></li>
                 {{ end }}
             </ul>
         </div>
