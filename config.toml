@@ -53,7 +53,20 @@ theme = "arch"
 
 
 [[menu.sidebar]]
+  Name = "About"
+  URL = "/pages/about"
+  Title = "About"
+  weight = 1
+
+[[menu.sidebar]]
+  Name = "Schedule"
+  URL = "/pages/schedule"
+  Title = "Schedule"
+  weight = 1
+
+[[menu.sidebar]]
   Name = "Travel"
   URL = "/pages/travel"
   Title = "Travel Information"
   weight = 1
+
