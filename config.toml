@@ -70,3 +70,9 @@ theme = "arch"
   Title = "Travel Information"
   weight = 1
 
+[[menu.sponsor]]
+  Name = "native_instruments"
+  URL = "https://native-instruments.de"
+  Title = "Native Instruments"
+  weight = 1
+
