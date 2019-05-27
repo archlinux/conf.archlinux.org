@@ -1,6 +1,4 @@
 {{partial "header.html" .}}
-    <div id="content-left-wrapper">
-        <div id="content-left">
             <div id="news">
             <h3>
                 <a href="/" title="Browse the blogs">Latest Posts</a>
@@ -15,25 +13,4 @@
                 </div>
                 {{end}}
             </div>
-        </div>
-    </div>
-
-    <div id="content-right">
-        <div id="nav-sidebar" class="widget">
-            <h4>Conf Information</h4>
-            <ul>
-                {{ range .Site.Menus.sidebar}}
-                <li><a href="{{ .URL }}" title="{{ .Title  }}">{{ .Name }}</a></li>
-                {{ end }}
-            </ul>
-        </div> 
-        <div id="arch-sponsors" class="widget">
-            <h4>Sponsors</h4>
-            {{ range .Site.Menus.sponsor}}
-            <a href="{{.URL}}" title="{{.Title}}">
-              <img src="images/sponsors/{{.Name}}.png" title="" alt="{{.Title}} logo" width="300px" >
-            </a>
-            {{ end }}
-        </div>
-    </div>
 {{partial "footer.html" .}}
