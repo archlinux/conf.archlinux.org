@@ -17,8 +17,8 @@ of volunteers, that work on several facets of the distribution. To enable us to
 bring as many of our team to Berlin this year, we need your support!
 
 We plan on providing travel grants for those of us in need of it (e.g.
-travelling from Asia or the Americas). If you or your company are interested in
-acting as a monetary sponsor for our event, please contact us via
+travelling from outside of Europe or students). If you or your company are
+interested in acting as a monetary sponsor for our event, please contact us via
 [archconf@archlinux.org](mailto:archconf@archlinux.org).
 
 As compensation for your monetary sponsoring we can offer you a prominent spot
