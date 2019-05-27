@@ -51,6 +51,11 @@ theme = "arch"
   Title = "Return to the main page"
   weight = -7
 
+[[menu.sidebar]]
+  Name = "Home"
+  URL = "/"
+  Title = "Home"
+  weight = -1
 
 [[menu.sidebar]]
   Name = "About"
