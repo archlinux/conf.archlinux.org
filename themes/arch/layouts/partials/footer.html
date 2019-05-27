@@ -1,3 +1,23 @@
+        </div>
+    </div>
+    <div id="content-right">
+        <div id="nav-sidebar" class="widget">
+            <h4>Conf Information</h4>
+            <ul>
+                {{ range .Site.Menus.sidebar}}
+                <li><a href="{{ .URL }}" title="{{ .Title  }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div> 
+        <div id="arch-sponsors" class="widget">
+            <h4>Sponsors</h4>
+            {{ range .Site.Menus.sponsor}}
+            <a href="{{.URL}}" title="{{.Title}}">
+              <img src="/images/sponsors/{{.Name}}.png" title="" alt="{{.Title}} logo" width="300px" >
+            </a>
+            {{ end }}
+        </div>
+    </div>
     <div id="footer">
         <p>Copyright © 2002-2019 <a href="mailto:jvinet@zeroflux.org" title="Contact Judd Vinet">Judd Vinet</a> and <a href="mailto:aaron@archlinux.org" title="Contact Aaron Griffin">Aaron Griffin</a>.</p>
         <p>The Arch Linux name and logo are recognized
