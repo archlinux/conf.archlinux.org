@@ -82,6 +82,12 @@ relativeURLs = true
   Title = "Travel Information"
   weight = 1
 
+[[menu.sidebar]]
+  Name = "Report"
+  URL = "/pages/report"
+  Title = "Conference Report"
+  weight = 1
+
 [[menu.sponsor]]
   Name = "native_instruments"
   URL = "https://www.native-instruments.com/en/"
