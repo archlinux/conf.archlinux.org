@@ -131,7 +131,37 @@ terraform now it would be logical manage our DNS also with terraform.
 
 ## Transitive dependencies
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-transitive-deps)
+Transitive dependencies are package dependencies, that abstract direct
+dependencies. If `package_a` depends on `package_b` and `package_c`, but
+`package_b` also depends on `package_c`, then making `package_a` depend only on
+`package_b` introduces a transitive dependency.
+Questions around this topic pop up on the mailing lists from time to time (e.g.
+[here](https://lists.archlinux.org/pipermail/arch-projects/2017-August/004607.html)).
+
+In a discussion round we identified a few problems around this topic and worked
+out actionables to discourage the use of transitive dependencies.
+
+### Problems
+
+* packages break when a dependency they need is removed down the chain where
+  they used to get it from
+* Namcap encourages it (e.g. it will suggest to remove “already included”
+  dependencies): https://bugs.archlinux.org/task/64022
+* Raises issues like https://bugs.archlinux.org/task/54887
+* Hard to grasp which packages actually depend on something just by looking at
+  reverse dependencies
+
+### Solutions
+
+* namcap needs to be changed to output an error on all missing `NEEDED` library
+  dependencies (see `find-libdeps` and `find-libprovides`)
+* namcap needs to be extended to properly resolve dependency chains for python
+  software (e.g. by utilizing setuptools configuration of a given project)
+* use of `find-libdeps` and `find-libprovides` needs to be documented in the
+  wiki and its use encouraged
+* packaging guidelines need to be changed to make sure packagers add shared
+  library names to provides array, which will extend the granularity of
+  dependency resolution and visibility
 
 ## Versioned Kernel Installs
 
