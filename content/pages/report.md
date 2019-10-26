@@ -127,7 +127,68 @@ terraform now it would be logical manage our DNS also with terraform.
 
 ## Package standards and Quality
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-package-standards)
+Arch has packaging guidelines of varying quality and some of them are often
+ignored. Below is a collection of findings from a discussion with various
+developers and trusted users.
+These data points need to be incorporated into the [package
+guidelines](https://wiki.archlinux.org/index.php/Arch_package_guidelines) and
+the [packager
+howto](https://wiki.archlinux.org/index.php/DeveloperWiki:HOWTO_Be_A_Packager).
+
+To increase the knowledge sharing on best practices it would be benificial to
+add experienced maintainers for the various languages (e.g. Haskell, Go, Java,
+Ruby, etc.) as contacts to the Wiki so people can have a look at "model"
+PKGBUILDs instead of random ones in the repos.
+
+Additionally, issues that come up during TU application reviews are a good
+example of inconsistencies, that are worth documenting right away.
+
+The following list is a (non-exhaustive) collection of examples, that still
+require addition in the wiki.
+
+- use HTTPS for sources whereever possible, "git+https://" for git
+- don't use specific sourceforge mirror to download, as they might not be
+  available (see [this forum
+  entry](https://bbs.archlinux.org/viewtopic.php?id=22200) as an example)
+- use PGP signatures where possible (may need to build from git tag instead of
+  source tarball)
+- rename sources to something unique for shared `$srcdir`
+- be consistent with the use of cd "$srcdir/..." (which is not needed anyway)
+  or use subshells `( )`
+- don't use internal functions like `msg2` as they are subject to change and
+  *will break*
+- `autoreconf`, `autogen.sh`, `bootstrap`, etc. needs to be called in
+  `prepare()`, not in  `build()`
+- always do `autoreconf -vfi` (instead of e.g. `autogen.sh` or directly using a
+  configure file), so that system flags (e.g. `--as-needed` in `LDFLAGS`) are
+  honored
+- avoid `sed` as it may fail silently
+- report problems upstream right away and add a link to the upstream ticket in
+  a comment. this improves visibility and allows for others to work with the
+  package
+- upstream patches where possible
+- run tests whereever possible
+- don't diminish the security or validity of a package (e.g. no checksum check,
+  removing PGP signature verification), because an upstream release is broken
+  or suddenly lacks a certain feature (e.g. PGP signature missing)
+- don't build implicitly in `package()`
+- use `/usr` instead of `/etc` where possible, e.g. `/usr/lib/systemd/system`
+- use .install files only for warnings, not for documentation
+- no need for provides=("$pkgname")
+- add non-internal shared libraries to `provides` (e.g. `package` provides
+  `libpackagename.so` and `libsomeotherthing.so`), so they can be used by other
+  packages directly (document `devtools`' `find-libprovides` and `find-libdeps`
+  for this use-case)
+- use `sysusers.d` and `tmpfiles.d`, instead of adding users or chowning files
+  manually in .install and *never* delete users on uninstall (see this
+  [TODO](https://www.archlinux.org/todo/usergroup-management/) for an example)
+
+Specific guidelines that should be improved by the currently most experienced
+developers/ Trusted Users on the given language:
+- [Haskell](https://wiki.archlinux.org/index.php/Haskell_package_guidelines)
+  (completely empty)
+- [Java](https://wiki.archlinux.org/index.php/Java_package_guidelines)
+  (suggests copying binaries instead of building from source is ok)
 
 ## Transitive dependencies
 
