@@ -261,7 +261,105 @@ provide feedback and help out a student.
 
 ## Project governance
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-project-governance)
+During Arch Conf we discussed the topic of project governance and its many
+facets
+([presentation](https://pkgbuild.com/~dvzrv/presentation/archconf2019-project-governance.pdf)).
+Historically, Arch Linux has always been somewhat of a loosly coupled
+meritocracy, lead by a Benevolent Dictator For Life (BDFL).
+
+### Problems
+
+We have identified the following (non-exhaustive) list of problems, that
+bother us as a team and that block us from developing the future of Arch Linux:
+
+- Infrastructure
+  - Many bigger infrastructure topics (some topics go unidentified for years,
+    others get bikeshedded to death and then nothing ever happens)
+- Intransparancy
+  - Financial intransparency (we have no real treasure guidelines, sometimes
+    the team can't decide on _what_ is worth spending money on, even if it's
+    not much)
+  - Large parts of the team are not really aware of the general "Arch status"
+    (e.g. who are all these people and what are they actually doing? How is
+    Arch doing?)
+  - Developer role intransparency (how is the developer role defined? how are
+    they voted in place, how are they demoted?)
+- Team Chemistry
+  - People discouraging each other from working on projects (team toxicity has
+    been building up)
+  - Some members of the team are very secluded and disconnected from the rest
+- Missing Ownership
+  - We have no PR management (which is currently a problem as sponsors would
+    like Twitter shoutouts but we've lost access to our Twitter account, for
+    instance)
+  - Bus factor = 1 (trademark, SPI, several internal projects, packaging)
+  - money spending is dealt with via Aaron + developer consent (which can take
+    long)
+  - No Arch Game Rules / RFC / PEP (we have no written rules and process to
+    update them, such as TU bylaws) Review process: leadership?
+
+### Actionables
+
+During the discussion round we came up with a few actions to take.
+
+- Team
+  - do (community centric) Arch Conf yearly!
+  - meet at FOSDEM (hackathon!)
+  - create a Conf, that is more user centric (requires sponsors)
+  - encourage (and do!) online meetings, pair programming
+- Increase Ownership
+  - lower bus factor by actively encouraging single-person projects to find
+    co-maintainers
+  - encourage developers to (be able to) work on all internal projects
+  - encourage everyone to be mindful to opt out properly (not silently), if
+    there's no time
+  - think about codified "allowances" for yearly events (e.g. Arch Conf) where
+    community members get travel refunds
+  - delegation of spending, e.g. any developer can spend up to $500 without
+    approval (e.g. a dinner); 3 developers required for up to $5000; all + Aaron
+    required for more?
+  - allowing for e.g. infrastructure team to spend
+  - get Hetzner to bill SPI instead of Ionuţ (aka wonder)
+- Transparency
+  - share / publish / highlight SPI report
+  - define and open up developer role
+  - define e.g. an RFC based process to codify Arch's internals and decision
+    making processes
+- Infrastructure
+  - find responsible team lead for major infrastructure topics, which will be
+    responsible for it
+
+In a follow-up work group to the initial presentation and discussion we
+discussed the idea of Arch Linux' project leadership further, as many of the
+brought up topics fell under the categories of *"Missing Ownership"* and
+*"Intransparency"*.
+
+We came up with the following wishlists for a general leadership role and
+leadership roles per project.
+
+#### Arch Linux Project Leadership
+
+- Identify (technical) problems in Arch
+- Conduct regular meetings in which to discuss problems and find resolutions to
+  those (assign to subleaders, defer, close)
+- Increase transparency amongst the team by doing regular general status
+  reports
+- Organize a list of ongoing processes/ subprojects and keep track of those
+  (regularly poll involved people)
+- Improve the decision making process by e.g. guiding an RFC based definition
+  of Arch's internal workings
+- Be electable
+- More actively seek sponsorship
+
+#### Leadership for Subprojects
+
+- Appointed by project leadership during meetings to tackle a specific
+  technical problem and/ or voted into place by the members of a specific
+  subproject
+- Identify issues and tasks in a specific technical domain
+- Conduct regular meetings in which project specifics are discussed, progress
+  is documented and shared with everyone afterwards
+- Track progress on the subproject's tasks
 
 ## Base Package
 
