@@ -121,6 +121,7 @@ hr {
 
 img {
     border: 0;
+    max-width: 90%;
 }
 
 /* scale fonts down to a sane default (16 * .812 = 13px) */
