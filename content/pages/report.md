@@ -123,8 +123,6 @@ The importer supports restarting on a previous half finished import.
 Currently our DNS is manually managed and provided by Hetzner. Since we use
 terraform now it would be logical manage our DNS also with terraform.
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-infra)
-
 ## Package standards and Quality
 
 Arch has packaging guidelines of varying quality and some of them are often
@@ -226,13 +224,13 @@ out actionables to discourage the use of transitive dependencies.
 
 ## Versioned Kernel Installs
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-versioned-kernel-installs)
+TODO
 
 # Day 2
 
 ## svn2git migration
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-svn2git-migration)
+TODO
 
 ## GSoC
 
@@ -257,7 +255,7 @@ take on. We've held a small brainstorm session on potential GSoC projects:
 All of these projects require a dedicated mentor who is wiling to review code,
 provide feedback and help out a student.
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-gsoc)
+TODO
 
 ## Project governance
 
@@ -363,11 +361,11 @@ leadership roles per project.
 
 ## Base Package
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-base-package)
+TODO
 
 ## Golang packaging
 
-[notes](https://pad.sleepmap.de/p/2019-arch-conf-golang)
+TODO
 
 ## Arch Security
 
