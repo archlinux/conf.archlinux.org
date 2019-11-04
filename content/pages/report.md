@@ -365,7 +365,35 @@ TODO
 
 ## Golang packaging
 
-TODO
+Participants:
+
+* Foxboron
+* Felixonmars
+
+The main goal of the packaging of go is to get rid of vendored dependencies. To
+make sure we are able to onboard new team members to package go, this should be
+tooling assisted.
+
+Debian has spent a [lot of time
+detailing](https://go-team.pages.debian.net/packaging.html) their efforts
+packaging golang proper. The idea is to utilize these guidelines and have our
+own tool to aid in the packaging.
+
+Debian also has their own tool to support packagers,
+[dh-make-golang](https://github.com/Debian/dh-make-golang), which we will
+utilize to provide our own tool, [gopkg](https://github.com/Foxboron/gopkg).
+
+Rest of the session was spent introducing the tool and discussing potential
+migration plans. The packages shouldn't be arbitrarily dropped into the given
+repository as they could be hundreds. Instead we will do packaging in a
+temporary repository to ensure we are able to properly maintain golang packages
+this way.
+
+
+We also fixed a [bug in
+glider](https://git.archlinux.org/svntogit/community.git/commit/trunk?h=packages/glider&id=7b33bb1c722dd358557ed2158f6babf5f4cd94e9) together :)
+
+
 
 ## Arch Security
 
