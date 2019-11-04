@@ -82,9 +82,9 @@ theme = "arch"
   weight = 1
 
 [[menu.sidebar]]
-  Name = "Report"
-  URL = "/pages/report"
-  Title = "Conference Report"
+  Name = "Reports"
+  URL = "/reports"
+  Title = "Conference Reports"
   weight = 1
 
 [[menu.sponsor]]

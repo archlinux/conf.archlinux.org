@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<div class="news-article box">
+{{ with .Data.Pages }}
+    <h2>Previous Arch Conf reports</h2>
+        {{ range .ByDate}}
+            <li><a {{ printf "href=%q" .URL | safeHTMLAttr }}>{{ default .Title .Params.heading }}</a></li>
+        {{ end }}
+        </ul>
+{{ end }}
+</div>
+{{ partial "footer.html" . }}
+
