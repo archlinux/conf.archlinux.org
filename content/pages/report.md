@@ -9,7 +9,7 @@ date: 2019-10-06T14:56:20+02:00
 
 ## Infrastructure
 
-There was an small talk about the curent infrastructure we provide, the problems we currently have which are:
+There was an small talk about the current infrastructure we provide, the problems we currently have which are:
 
 * User management
 * Security
@@ -18,7 +18,7 @@ There was an small talk about the curent infrastructure we provide, the problems
 * Not ideal Ansible setup
 * Mix between VPS/dedicated machines
 * Unmanaged Luna Server (cgit, AUR, BBS)
-* Hard to mirror betwene cgit and Github
+* Hard to mirror between cgit and Github
 * no CI/CD
 
 ### Discussions 
@@ -135,7 +135,7 @@ guidelines](https://wiki.archlinux.org/index.php/Arch_package_guidelines) and
 the [packager
 howto](https://wiki.archlinux.org/index.php/DeveloperWiki:HOWTO_Be_A_Packager).
 
-To increase the knowledge sharing on best practices it would be benificial to
+To increase the knowledge sharing on best practices it would be beneficial to
 add experienced maintainers for the various languages (e.g. Haskell, Go, Java,
 Ruby, etc.) as contacts to the Wiki so people can have a look at "model"
 PKGBUILDs instead of random ones in the repos.
@@ -146,7 +146,7 @@ example of inconsistencies, that are worth documenting right away.
 The following list is a (non-exhaustive) collection of examples, that still
 require addition in the wiki.
 
-- use HTTPS for sources whereever possible, "git+https://" for git
+- use HTTPS for sources wherever possible, "git+https://" for git
 - don't use specific sourceforge mirror to download, as they might not be
   available (see [this forum
   entry](https://bbs.archlinux.org/viewtopic.php?id=22200) as an example)
@@ -167,7 +167,7 @@ require addition in the wiki.
   a comment. this improves visibility and allows for others to work with the
   package
 - upstream patches where possible
-- run tests whereever possible
+- run tests wherever possible
 - don't diminish the security or validity of a package (e.g. no checksum check,
   removing PGP signature verification), because an upstream release is broken
   or suddenly lacks a certain feature (e.g. PGP signature missing)
@@ -271,7 +271,7 @@ TODO
       * Option (A) Tags can be force pushed until a "release"
       * Option (B) Do not allow force pushing tags - **AGREED ON THIS**
   * Split in subdirs by first two letters?
-* A seperate git repository is kept for management of the (binary) arch repos/mirrors
+* A separate git repository is kept for management of the (binary) arch repos/mirrors
   * Layout proposals
     * arch -> repo -> pkgbase
       https://github.com/dvzrv/arch-repo-management#git-repository-layout
@@ -433,7 +433,7 @@ TODO
 During Arch Conf we discussed the topic of project governance and its many
 facets
 ([presentation](https://pkgbuild.com/~dvzrv/presentation/archconf2019-project-governance.pdf)).
-Historically, Arch Linux has always been somewhat of a loosly coupled
+Historically, Arch Linux has always been somewhat of a loosely coupled
 meritocracy, lead by a Benevolent Dictator For Life (BDFL).
 
 ### Problems
