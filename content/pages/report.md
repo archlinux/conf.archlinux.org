@@ -3,6 +3,8 @@ title: "Report"
 date: 2019-10-06T14:56:20+02:00
 ---
 
+![Group Photo!](/images/conf/groupphoto.jpg)
+
 # Day 1
 
 ## Infrastructure
