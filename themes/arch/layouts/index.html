@@ -5,14 +5,12 @@
                 <span class="arrow"></span>
             </h3>
             <a href="/index.xml" title="Arch News RSS Feed" class="rss-icon"><img width="16" height="16" src="/rss.png" alt="RSS Feed" /></a>
-                {{ range where $.Site.Pages.ByPublishDate.Reverse "Section" "posts" }}
-                    {{ if ge (len .Content) 1}}
+                {{ range where site.RegularPages "Type" "posts" }}
                     <h4><a href="{{.Permalink}}" title="{{.Title}}"> {{.Title}}</a></h4>
                     <p class="timestamp">{{.Date.Format "2006-01-02"}}<p>
                     <div class="article-content">
                         {{.Content}}
                     </div>
-                    {{end}}
                 {{end}}
             </div>
 {{partial "footer.html" .}}
