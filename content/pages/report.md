@@ -11,7 +11,7 @@ Licensed under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4
 
 [Pictures](https://static.conf.archlinux.org/archconf2019/pictures/) [(Cloud Link)](https://www.jottacloud.com/p/foxboron/_3032773dd72a47ddb602c724685e35f1/thumbs)
 
-Licensed under [CC-BY-NC-ND 3.0](https://creativecommons.org/licenses/by-nc-nd/3.0/) by the Arch Linux team
+Licensed under [CC-BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) by the Arch Linux team
 
 # Day 1
 
