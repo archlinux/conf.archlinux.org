@@ -21,8 +21,7 @@ There was an small talk about the current infrastructure we provide, the problem
 * Hard to mirror between cgit and Github
 * no CI/CD
 
-### Discussions 
-
+### Discussions
 
 #### Mailman 2
 
@@ -226,7 +225,45 @@ out actionables to discourage the use of transitive dependencies.
 
 ## Versioned Kernel Installs
 
-TODO
+A group of participants was interested in discussing versioned kernel installs.
+A [long-standing bug report](https://bugs.archlinux.org/task/16702) evolves
+around the topic.
+
+### Problems
+
+* Upon installing a new kernel, the module tree is removed, meaning that
+  subsequent loading of modules without a reboot fail (e.g. pluging an USB
+  drive)
+* If there is an issue with the new version, there is no "old" kernel to boot
+  into (e.g. when linux-lts or any other kernel might not be a suitable
+  fallback)
+
+### Open Questions
+
+* Up until lately we installed /boot/vmlinuz-linux and generated an associated
+  /boot/initramfs-linux.img from it, which led to the question how to deal with
+  rewriting a specific bootloader configuration on each kernel update.
+* Symlinking the initramfs images: A default name links to newest version (this
+  does not work on FAT)
+* kernel-install from systemd can manage multiple kernels (but assumes UEFI
+  systems)
+* Not all bootloaders have a way to specify glob pattern in kernel
+  image/ initramfs so that they grab all versioned kernels
+
+### Solutions
+
+[Changes to the kernel packages and
+mkinitcpio](https://www.archlinux.org/news/new-kernel-packages-and-mkinitcpio-hooks/)
+en route to a possible move to Dracut enable us to at least leave old kernels +
+initramfs around, making rescue boots possible:
+
+* /boot/ is no longer part of the kernel packages
+* Hooks in mkinitcpio and/or Dracut (possibly using kernel-install) are now
+  able to copy kernels from /lib/modules to /boot/ in different naming schemes
+  (this needs further work)
+* Seblu versioned kernels with kernel-install and mkinitcpio:
+  * https://git.seblu.net/archlinux/linux-seblu-meta
+  * https://git.seblu.net/archlinux/kernel-install-poc
 
 # Day 2
 
@@ -426,8 +463,6 @@ take on. We've held a small brainstorm session on potential GSoC projects:
 All of these projects require a dedicated mentor who is wiling to review code,
 provide feedback and help out a student.
 
-TODO
-
 ## Project governance
 
 During Arch Conf we discussed the topic of project governance and its many
@@ -560,14 +595,10 @@ repository as they could be hundreds. Instead we will do packaging in a
 temporary repository to ensure we are able to properly maintain golang packages
 this way.
 
-
 We also fixed a [bug in
 glider](https://git.archlinux.org/svntogit/community.git/commit/trunk?h=packages/glider&id=7b33bb1c722dd358557ed2158f6babf5f4cd94e9) together :)
 
-
-
 ## Arch Security
-
 
 ### Reproducible builds
 
