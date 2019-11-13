@@ -3,8 +3,6 @@ title: "Arch Conf 2019 Report"
 date: 2019-11-13T20:50:45+01:00
 ---
 
-Hey,
-
 During the 5th and 6th of October, 21 team members attending the very first
 internal Arch Conf. We spent 2 days at Native Instruments in Berlin having
 workshops, discussions and hack sessions together. We even managed to get into,
