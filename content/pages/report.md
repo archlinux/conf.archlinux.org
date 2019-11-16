@@ -596,7 +596,12 @@ As a follow up on the proposed change, several modifications were made (during A
 * The kernel packages (e.g.
   [linux](https://git.archlinux.org/svntogit/packages.git/commit/trunk/PKGBUILD?h=packages/linux&id=f1c97a49a09b0fd8d7d1c3f6e8e635ef45974373))
   were modified to add linux-firmware as an optional dependency.
-* A news item was posted to notify of the change.
+* A [news
+  item](https://www.archlinux.org/news/base-group-replaced-by-mandatory-base-package-manual-intervention-required/)
+  was posted to notify of the change while [a message to the arch-dev-public
+  mailing
+  list](https://lists.archlinux.org/pipermail/arch-dev-public/2019-October/029693.html)
+  elaborated further on the change and potential pitfalls.
 
 ### Further follow ups
 
