@@ -567,7 +567,44 @@ leadership roles per project.
 
 ## Base Package
 
-TODO
+The idea of turning the `base` group into a `base` package [has been proposed in
+January this
+year](https://lists.archlinux.org/pipermail/arch-dev-public/2019-January/029435.html)
+(while [follow ups lasted well into
+March](https://lists.archlinux.org/pipermail/arch-dev-public/2019-March/029491.html)).
+
+### Problems
+
+* Base as a group contains many (unneeded) packages
+* Some assume it being installed, others don’t (as the members of a group can't
+  be tracked without reinstalling it, this is difficult)
+
+### Solutions
+
+As a follow up on the proposed change, several modifications were made (during Arch Conf):
+
+* Create a new `base` meta-package, which is assumed being installed on all systems.
+* Base as a package means dependencies can be added and removed on the fly and
+  being more transparent
+  ([PKGBUILD](https://git.archlinux.org/svntogit/packages.git/tree/trunk/PKGBUILD?h=packages/base))
+* The new package was pushed to `[core]` and a
+  [TODO](https://www.archlinux.org/todo/base-group-removal/) created to remove
+  all packages from the `base` group
+* The [installation
+  guide](https://wiki.archlinux.org/index.php/Installation_guide#Install_essential_packages)
+  was modified to reflect this change.
+* The kernel packages (e.g.
+  [linux](https://git.archlinux.org/svntogit/packages.git/commit/trunk/PKGBUILD?h=packages/linux&id=f1c97a49a09b0fd8d7d1c3f6e8e635ef45974373))
+  were modified to add linux-firmware as an optional dependency.
+* A news item was posted to notify of the change.
+
+### Further follow ups
+
+* Evaluate removal of `bzip2`, `gzip` and `xz` as they are a dependency for
+  something else (e.g. pacman) or [not useful on their
+  own](https://bugs.archlinux.org/task/64028)
+* Evaluate removal of [network tools](https://bugs.archlinux.org/task/64030),
+  [pciutils](https://bugs.archlinux.org/task/64029)
 
 ## Golang packaging
 
