@@ -171,7 +171,7 @@ require addition in the wiki.
   honored
 - avoid `sed` as it may fail silently
 - report problems upstream right away and add a link to the upstream ticket in
-  a comment. this improves visibility and allows for others to work with the
+  a comment. This improves visibility and allows for others to work with the
   package
 - upstream patches where possible
 - run tests wherever possible
@@ -240,7 +240,7 @@ around the topic.
 ### Problems
 
 * Upon installing a new kernel, the module tree is removed, meaning that
-  subsequent loading of modules without a reboot fail (e.g. pluging an USB
+  subsequent loading of modules without a reboot fail (e.g. plugging an USB
   drive)
 * If there is an issue with the new version, there is no "old" kernel to boot
   into (e.g. when linux-lts or any other kernel might not be a suitable
@@ -311,7 +311,7 @@ initramfs around, making rescue boots possible:
 
 * Packages (pkgbase) are maintained in separate git repositories
   * Tags: `pkgname-(epoch:)pkgver-pkgrel`
-    * Not tagged by arch (a PKGBUILD may work for several archictectures)
+    * Not tagged by arch (a PKGBUILD may work for several architectures)
     * Signed tags + verification
       * Option (A) Tags can be force pushed until a "release"
       * Option (B) Do not allow force pushing tags - **AGREED ON THIS**
