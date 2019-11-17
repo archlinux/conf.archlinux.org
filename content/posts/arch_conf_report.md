@@ -1,6 +1,6 @@
 ---
 title: "Arch Conf 2019 Report"
-date: 2019-11-13T20:50:45+01:00
+date: 2019-11-17T15:00:00+01:00
 ---
 
 During the 5th and 6th of October, 21 team members attended the very first
