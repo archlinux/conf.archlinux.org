@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<div class="news-article box">
+{{ with .Data.Pages }}
+    {{ range .ByDate}}
+        <li><a {{ printf "href=%q" .URL | safeHTMLAttr }}>{{ default .Title .Params.heading }}</a></li>
+    {{ end }}
+{{ end }}
+</div>
+{{ partial "footer.html" . }}
+

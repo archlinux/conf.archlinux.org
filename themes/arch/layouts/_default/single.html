@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <div class="news-article box">
     <h2>{{.Title}}</h2>
+    <p class="article-info">{{.Date.Format "2006-01-02"}} - {{ .Params.author}} </p>
     <div class="article-content" itemprop="articleBody">{{.Content}}</div>
 </div>
 {{ partial "footer.html" . }}
