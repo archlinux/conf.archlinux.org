@@ -17,7 +17,7 @@ Licensed under [CC-BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4
 
 ## Infrastructure
 
-There was an small talk about the current infrastructure we provide, the problems we currently have which are:
+There was a small talk about the current infrastructure we provide, the problems we currently have which are:
 
 * User management
 * Security
@@ -43,7 +43,7 @@ mailman meaning other mailservers could blacklist us as a consequence of not
 Migrating to mailman 3 is documented
 [here](https://docs.mailman3.org/en/latest/migration.html).
 
-The actionable items where identified as:
+The actionable items were identified as:
 
 * Package mailman 3 and [hyperkitty](https://gitlab.com/mailman/mailman/issues/343) (optionally)
 * Try the migration process, notes from [Fedora](https://fedoraproject.org/wiki/Mailman3_Migration)
@@ -64,7 +64,7 @@ Services which we need to move over:
 * Mediawiki
 * AUR
 * Patchwork (gitlab?)
-* Archweb (django has an module for it)
+* Archweb (django has a module for it)
 * [Mailman](http://docs.mailman3.org/en/latest/config*web.html#configure-login-to-django)
 * Kanboard (gitlab?)
 * Gitlab
@@ -91,7 +91,7 @@ The plan is to try out Gitlab for hosting our project git repositories and not t
 
 #### BBS Alternative
 
-The current forum software uses Fluxbb which has it's last release more then a
+The current forum software uses Fluxbb which has its last release more then a
 year ago and might cause issues in the future regarding security, performance
 and PHP compatibility. We have custom patches applied to our current fluxbb
 instance so that searching does not DoS the MySQL database.
@@ -99,7 +99,7 @@ instance so that searching does not DoS the MySQL database.
 The main requirements for an alternative forum software have been identified as:
 
 * Retain old posts from FluxBB
-* GDPR (or make it easier then the current scenario)
+* GDPR (or make it easier than the current scenario)
 * OAUTH or Plugin software
 * Spam / signup protection such as we have now
 * Moderation tools, mass removing posts. 
@@ -112,7 +112,7 @@ Possible alternatives have been identified as:
 * [discourse](https://www.discourse.org/)
 * [flarium]( https://flarum.org)
 
-For discourse there is a way to [migrate FluxBB](https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616) users and posts to Discourse using a [Ruby import script](https://github.com/discourse/discourse/blob/master/script/import_scripts/fluxbb.r). This has been tested and has so far been able to import the users.
+For discourse there is a way to [migrate FluxBB](https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616) users and posts to discourse using a [Ruby import script](https://github.com/discourse/discourse/blob/master/script/import_scripts/fluxbb.r). This has been tested and has so far been able to import the users.
 
 Testing migration to discourse:
 
@@ -130,7 +130,7 @@ The importer supports restarting on a previous half finished import.
 #### Automate DNS
 
 Currently our DNS is manually managed and provided by Hetzner. Since we use
-terraform now it would be logical manage our DNS also with terraform.
+terraform now it would be logical to manage our DNS with terraform also.
 
 ## Package standards and Quality
 
@@ -148,13 +148,13 @@ Ruby, etc.) as contacts to the Wiki so people can have a look at "model"
 PKGBUILDs instead of random ones in the repos.
 
 Additionally, issues that come up during TU application reviews are a good
-example of inconsistencies, that are worth documenting right away.
+example of inconsistencies that are worth documenting right away.
 
-The following list is a (non-exhaustive) collection of examples, that still
+The following list is a (non-exhaustive) collection of examples that still
 require addition in the wiki.
 
 - use HTTPS for sources wherever possible, "git+https://" for git
-- don't use specific sourceforge mirror to download, as they might not be
+- don't use specific sourceforge mirror to download as they might not be
   available (see [this forum
   entry](https://bbs.archlinux.org/viewtopic.php?id=22200) as an example)
 - use PGP signatures where possible (may need to build from git tag instead of
@@ -167,7 +167,7 @@ require addition in the wiki.
 - `autoreconf`, `autogen.sh`, `bootstrap`, etc. needs to be called in
   `prepare()`, not in  `build()`
 - always do `autoreconf -vfi` (instead of e.g. `autogen.sh` or directly using a
-  configure file), so that system flags (e.g. `--as-needed` in `LDFLAGS`) are
+  configure file) so that system flags (e.g. `--as-needed` in `LDFLAGS`) are
   honored
 - avoid `sed` as it may fail silently
 - report problems upstream right away and add a link to the upstream ticket in
@@ -176,17 +176,17 @@ require addition in the wiki.
 - upstream patches where possible
 - run tests wherever possible
 - don't diminish the security or validity of a package (e.g. no checksum check,
-  removing PGP signature verification), because an upstream release is broken
+  removing PGP signature verification) because an upstream release is broken
   or suddenly lacks a certain feature (e.g. PGP signature missing)
 - don't build implicitly in `package()`
 - use `/usr` instead of `/etc` where possible, e.g. `/usr/lib/systemd/system`
 - use .install files only for warnings, not for documentation
 - no need for provides=("$pkgname")
 - add non-internal shared libraries to `provides` (e.g. `package` provides
-  `libpackagename.so` and `libsomeotherthing.so`), so they can be used by other
+  `libpackagename.so` and `libsomeotherthing.so`) so they can be used by other
   packages directly (document `devtools`' `find-libprovides` and `find-libdeps`
   for this use-case)
-- use `sysusers.d` and `tmpfiles.d`, instead of adding users or chowning files
+- use `sysusers.d` and `tmpfiles.d` instead of adding users or chowning files
   manually in .install and *never* delete users on uninstall (see this
   [TODO](https://www.archlinux.org/todo/usergroup-management/) for an example)
 
@@ -199,7 +199,7 @@ developers/ Trusted Users on the given language:
 
 ## Transitive dependencies
 
-Transitive dependencies are package dependencies, that abstract direct
+Transitive dependencies are package dependencies that abstract direct
 dependencies. If `package_a` depends on `package_b` and `package_c`, but
 `package_b` also depends on `package_c`, then making `package_a` depend only on
 `package_b` introduces a transitive dependency.
