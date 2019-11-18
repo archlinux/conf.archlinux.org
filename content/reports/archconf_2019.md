@@ -74,7 +74,7 @@ Services which we need to move over:
 * SSH/unix users
 
 #### Questions
-* To we put everyone in openid connect or not?
+* Do we put everyone in openid connect or not?
 * How to do this gradually?
 * How well does it scale?
 
