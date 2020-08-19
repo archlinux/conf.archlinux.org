@@ -58,38 +58,14 @@ theme = "arch"
   weight = -1
 
 [[menu.sidebar]]
-  Name = "About"
-  URL = "/pages/about"
-  Title = "About"
-  weight = 1
-
-[[menu.sidebar]]
-  Name = "Schedule"
-  URL = "/pages/schedule"
-  Title = "Schedule"
-  weight = 1
-
-[[menu.sidebar]]
-  Name = "Sponsoring"
-  URL = "/pages/sponsoring"
-  Title = "Become a Sponsor!"
-  weight = 1
-
-[[menu.sidebar]]
-  Name = "Travel"
-  URL = "/pages/travel"
-  Title = "Travel Information"
-  weight = 1
-
-[[menu.sidebar]]
-  Name = "Reports"
-  URL = "/reports"
-  Title = "Conference Reports"
+  Name = "Recording"
+  URL = "/pages/recording"
+  Title = "Recording Setup"
   weight = 1
 
 [[menu.sponsor]]
-  Name = "native_instruments"
-  URL = "https://www.native-instruments.com/en/"
-  Title = "Native Instruments"
+  Name = "pretalx"
+  URL = "https://pretalx.com/p/about/"
+  Title = "Pretalx"
   weight = 1
 
