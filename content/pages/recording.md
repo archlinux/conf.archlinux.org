@@ -4,8 +4,9 @@ date: 2020-08-19T00:00:00+02:00
 author: Conference Team
 ---
 
-All accepted submissions needs to be recorded and sent inn to conf@archlinux.org
-by 5th of October. This details resources for recording the conference talk.
+All accepted submissions needs to be recorded and sent in to
+[archconf@archlinux.org](mailto:archconf@archlinux.org).  by 5th of October.
+This details resources for recording the conference talk.
 
 The C3VOC has written excellent documentation when it comes to creating a
 recording setup at home and is well worth the read!
