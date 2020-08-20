@@ -13,8 +13,8 @@ recording setup at home and is well worth the read!
 
 [https://c3voc.de/wiki/distributed-conference]()
 
-The following assets are recommended to have a consistent conference, but
-they are not required if you the presenter has a more comfortable setup already.
+The following assets are recommended to have a consistent conference, but they
+are not required if you, the presenter, have a more comfortable setup already.
 
 For the recording of the talk we recommend using [Open-Broadcaster
 Software](https://obsproject.com/) as it's easy for people to setup the screen
