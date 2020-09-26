@@ -78,3 +78,10 @@ unsafe= true
   Title = "Pretalx"
   weight = 1
 
+[[menu.sponsor]]
+  Name = "C3VOC"
+  Image = "C3VOC.svg"
+  URL = "https://c3voc.de/"
+  Title = "CCC Video Operation Center (C3VOC)"
+  weight = 1
+
