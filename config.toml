@@ -61,6 +61,12 @@ unsafe= true
   weight = -1
 
 [[menu.sidebar]]
+  Name = "Stream"
+  URL = "/pages/stream"
+  Title = "Stream"
+  weight = 1
+
+[[menu.sidebar]]
   Name = "Recording"
   URL = "/pages/recording"
   Title = "Recording Setup"
