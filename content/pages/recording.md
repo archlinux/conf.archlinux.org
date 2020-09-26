@@ -5,13 +5,13 @@ author: Conference Team
 ---
 
 All accepted submissions need to be recorded and sent in to
-[archconf@archlinux.org](mailto:archconf@archlinux.org).  by 5th of October.
+[archconf@archlinux.org](mailto:archconf@archlinux.org) by the 5th of October.
 This details resources for recording the conference talk.
 
 The C3VOC has written excellent documentation when it comes to creating a
 recording setup at home and is well worth the read!
 
-[https://c3voc.de/wiki/distributed-conference]()
+[https://c3voc.de/wiki/distributed-conference](https://c3voc.de/wiki/distributed-conference)
 
 The following assets are recommended to have a consistent conference, but they
 are not required if you, the presenter, have a more comfortable setup already.
@@ -22,7 +22,7 @@ for a presentation. We also provide a layout one can use as a guideline.
 
 
 The [OBS Stream Profile](/presentation/ArchConfOBSScene.json) can be loaded
-through Profile -> Import. 
+through "Scene Collection" -> Import. 
 
 A [guided background](/presentation/ArchLiveBanner.png) with outlines for the
 presentation screen and camera position.
