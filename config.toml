@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Arch Conf"
 theme = "arch"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [[menu.main]]
   Name = "Download"
   URL = "https://archlinux.org/download"
