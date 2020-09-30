@@ -1,5 +1,5 @@
 # conf.archlinux.org
-
+easiest way for connecting on servers
 The source code for [conf.archlinux.org](https://conf.archlinux.org), uses hugo
 as static site generator.
 
