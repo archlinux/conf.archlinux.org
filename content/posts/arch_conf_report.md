@@ -17,11 +17,11 @@ from the conference!
 
 ![Group Photo!](/images/conf/groupphoto.jpg)
 
-[Recordings](https://static.conf.archlinux.org/archconf2019/recordings/)
+[Recordings](https://static.conf.archlinux.org/2019/archconf/recordings/)
 
 Licensed under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) by the Arch Linux team
 
-[Pictures](https://static.conf.archlinux.org/archconf2019/pictures/) [(Cloud Link)](https://www.jottacloud.com/p/foxboron/_3032773dd72a47ddb602c724685e35f1/thumbs)
+[Pictures](https://static.conf.archlinux.org/2019/archconf/pictures/) [(Cloud Link)](https://www.jottacloud.com/p/foxboron/_3032773dd72a47ddb602c724685e35f1/thumbs)
 
 Licensed under [CC-BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) by the Arch Linux team
 
