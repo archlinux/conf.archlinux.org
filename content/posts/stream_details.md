@@ -30,7 +30,7 @@ For an overview of the available streams and quick links, please head over to th
 ### Recordings
 After the conference, the talks are going to be uploaded to our own archive and the C3VOC.
 
-Archive: [https://static.conf.archlinux.org/](https://static.conf.archlinux.org/)
+[https://gitlab.archlinux.org/archlinux/conf-files/](https://gitlab.archlinux.org/archlinux/conf-files/)
 
 C3VOC: [https://media.ccc.de/](https://media.ccc.de/)
 
