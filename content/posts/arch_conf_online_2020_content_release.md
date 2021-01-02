@@ -12,7 +12,7 @@ questions from the Q&A and the presentation slides. We have also included the DJ
 mixes from the break, the assets used for the OBS stream, and the break
 animation along with the background used for the presentations.
 
-[https://static.conf.archlinux.org/](https://static.conf.archlinux.org/)
+[https://gitlab.archlinux.org/archlinux/conf-files/](https://gitlab.archlinux.org/archlinux/conf-files/-/tree/master/)
 
 For any questions or feedback please send an email archconf@archlinux.org!
 
